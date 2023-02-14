@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+
+    <!--Estilo Customizado-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--Estilo Normalize-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--[if lt IE 9]-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+    <title>Museu Nacional</title>
+
+
+
+</head>
+<body>
+  <div id="container"><!--Inicio Container-->
+    <header> <!--Inicio Conteudo-->
+        <div id="logo" >
+            <h1><a href="">Museu Nacional</a></h1>
+        </div>
+
+        <nav><!--Inicio Barra Navegação-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Exposição</a></li>
+                <li><a href="#">Pesquisa</a></li>
+                <li><a href="#">Acervo</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Contato</a></li>   
+                
+            </ul>
+        </nav><!--Fim Barra Navegação-->
+
+    </header><!--Fim Conteudo-->
+
+    <div id="principal"> <!--Inicio Principal-->
+        <div id="conteudo">
+            <section id="capa">
+                <img src="img/museu.png" alt="">
+
+            </section>
+            <section id="postagens">
+                <article id="video">
+                    <h3>Video: Conheça o museu</h3>
+                    <iframe src="https://www.youtube.com/embed/qLfQOZ7VWy8" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </article>
+                <article id="mapa">
+                    <h3>Mapa: Encontre o Museu </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14417.704865618023!2d-49.2259859!3d-25.3905399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe61b84e8db8cd9c2!2sMuseu%20Eg%C3%ADpcio%20e%20Rosacruz%20-Tutankhamon!5e0!3m2!1spt-BR!2sbr!4v1676320169178!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;"
+                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                <article id="exposicao">
+                    <h3>Exposições</h3>
+                    <ul>
+                        <li><a href="">A carroagem do tuti</a></li>
+                        <li><a href="">è os pia meu </a></li>
+                        <li><a href="">A carroagem do tuti</a></li>
+                        <li><a href="">A carroagem do tuti</a></li>
+                        <li><a href="">A carroagem do tuti</a></li>
+                        <li><a href="">A carroagem do tuti</a></li>
+                        <li><a href="">A carroagem do tuti</a></li>
+                    </ul>
+                </article>
+                <article id="historia">
+                    <h3>300 anos de Historia </h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                         but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+                </article>
+            </section>
+
+        </div>
+        <aside id="depoimento">
+            <section>
+                <img src="img/depoimento.png" alt="">
+
+            </section>
+            
+
+            <section id="visita"><!--Inicio Visita-->
+                <h4> Faça uma Visita</h4>
+                <form action="">
+                    <fieldset>
+                        <legend>Selecione uma data</legend>
+
+                        <label for="data">Data</label>
+                        <input class="campo" type="date" id="data" value="dd/mm/aaaa">
+
+                        <label for="QTD">QTD. Pessoas</label>
+                        <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+
+                    </fieldset>
+                    <input class="botao" type="submit" value="Verificar Disponibilidade">
+                </form>
+            </section><!--Fim Visita-->
+            <section id="galeria">
+                <h4 id="h4">
+                    Galeria de Fotos
+                </h4>
+                <a href="">
+                    <img src="img/imagem1.jpg" height="93" width="93">
+                </a>
+
+                <a href="">
+                    <img src="img/imagem2.jpg" height="93" width="93">
+                </a>
+
+                <a href="">
+                    <img src="img/imagem3.jpg" height="93" width="93">
+                </a>
+
+                <a href="">
+                    <img src="img/imagem4.jpg" height="93" width="93">
+                </a>
+
+            </section>
+        </aside>
+        <footer style="clear: both;">
+            <p>&copy;2023 Coorporation Museu Nacional - Todos os Direitos Reservados</p>
+        </footer>
+        
+
+    </div><!--fim Principal-->
+   
+
+  </div><!-- Fim Container-->
+
+
+</body>
+</html>
