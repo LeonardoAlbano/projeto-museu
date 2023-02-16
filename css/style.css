@@ -1,0 +1,201 @@
+/*LAYOUT
+****************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale ;
+}
+
+:root {
+  font-size:  62.5%; 
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(167.96deg, #3e149e 0%, #271a45 100%) no-repeat ;
+
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+}
+
+/*Formatação
+****************************/
+h1,
+strong {
+  font-weight: 500;
+}
+
+h1{
+  text-align: center;
+  line-height: 2.4rem;
+  color: aliceblue;
+  font-size: 2.0rem;
+}
+
+p{
+  color: #00000065;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+strong {
+  color: #000000e3;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+/*Capa
+****************************/
+#passagem {
+  max-width: 32.7em;
+  margin: auto;
+}
+
+#ticket {
+  margin-top: 2rem ;
+
+}
+
+/*Conteudo
+****************************/
+section {
+  padding: 2.4rem 3.2rem;
+  background-color: aliceblue;
+
+  
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+
+.grid {
+  display: grid;
+}
+
+
+/*Topo-ticket
+****************************/
+
+.topo {
+  border-radius: 2.4rem 2.4rem 0 0;
+  gap: 2.4rem;
+
+  --mask: radial-gradient(1.2rem at 1.2rem bottom, transparent 95%, black) -1.2rem;
+}
+.topo time{
+  color:#000000c5;
+  
+}
+
+.topo time sup {
+  font-weight: 500;
+  font-size: 1.0rem;
+  line-height: 1.7rem;
+
+}
+
+/*Meio-ticket
+****************************/
+
+.meio-ticket {
+  border: .1rem dashed rgba(45, 14, 87, 0.678);
+  border-left: 0;
+  border-right: 0;
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, transparent 95%, black) -1.2rem -1.2rem;
+  
+
+}
+
+.aviao {
+  align-self: center;
+}
+
+.partida, .chegada {
+  width: 12.5REM;
+}
+
+.partida strong, .chegada strong {
+  font-size: 4.0rem;
+  line-height: 4.7rem;
+}
+
+/*Fim-ticket
+****************************/
+
+.final-ticket {
+  border-radius:0 0 2.4rem 2.4rem;
+  --mask: radial-gradient(1.2rem at 1.2rem top, transparent 95%, black) -1.2rem;
+}
+
+.final-ticket > p {
+  text-align: center;
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  color: rgba(219, 43, 67, 0.925);
+}
+
+.final-ticket .container {
+  align-items: center;
+  gap: .8rem;
+}
+
+
+dl.grid{
+  gap: 1.6rem;
+  min-width: 9.5rem;
+}
+
+dt time {
+  color: beige;
+  font-weight: 500;
+  line-height: 1.9rem;
+  background: #310d86;
+  border-radius: .8rem;
+  padding: .4rem .8rem;
+  display: inline-block;
+  margin-top: 0.2rem;
+
+}
+
+
+.column {
+  grid-auto-flow: column;
+
+}
+
+.lateral-direita {
+  text-align: right;
+}
+
+/*Animação
+****************************/
+@keyframes animacao1 {
+  to {
+     transform: translateY(3.0rem) ;
+ }
+}
+
+
+.final-ticket:hover {
+ animation: animacao1 1s ease-out alternate infinite;
+}
+
+
+/*Rodapé
+****************************/
+footer {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: antiquewhite;
+  opacity: 0.64;
+  width: 27rem;
+  text-align: center;
+  margin: 4rem auto;
+}
+
